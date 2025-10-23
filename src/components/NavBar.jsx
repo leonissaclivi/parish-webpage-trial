@@ -3,8 +3,27 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useEffect } from 'react';
+import { Dropdown } from 'bootstrap';
 
 function NavBar() {
+
+    useEffect(() => {
+        
+        const dropdowns = document.querySelectorAll('.dropdown-toggle');
+        dropdowns.forEach((dropdownToggle) => {
+            dropdownToggle.addEventListener('click', () => {
+                const navCollapse = document.querySelector('.navbar-collapse');
+                if (navCollapse) {
+                    navCollapse.style.height = 'auto';
+                }
+            });
+        });
+    }, []);
+
+
+
+
     return (
         <Navbar expand='lg' className='py-1' style={{ backgroundColor: "#f5f4f5" }}>
             <Container>
@@ -24,7 +43,7 @@ function NavBar() {
                             <NavDropdown.Item href='organization1'>Event 1</NavDropdown.Item>
                             <NavDropdown.Item href='organization2'>Event 2</NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title='Events and Announcements' style={{zIndex: 1050}}>
+                        <NavDropdown title='Events and Announcements' style={{ zIndex: 1050 }}>
                             <NavDropdown.Item href='organization1'>Event 1</NavDropdown.Item>
                             <NavDropdown.Item href='organization2'>Event 2</NavDropdown.Item>
                         </NavDropdown>

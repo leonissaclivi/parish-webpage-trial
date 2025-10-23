@@ -43,7 +43,7 @@ function ProfileCard() {
 
           <div className='mb-3' style={{ width: '100%' }}>
             <img
-              className="d-block w-100 profile-image-fade"
+              className="d-block w-100 profile-image-fade profile-image-mobile-adjust"
               src={PROFILE_IMAGES[selectedIndex].url}
               alt={PROFILE_IMAGES[selectedIndex].alt}
               style={{ height: '450px', objectFit: 'cover', borderRadius: '0px' , opacity: isFading ? 0 : 1, transition: `opacity ${TRANSITION_TIME}ms ease-in-out`,}}
