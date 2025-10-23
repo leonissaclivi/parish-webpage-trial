@@ -81,7 +81,7 @@ function Header() {
                                 onClick={() => handleMenuClick('item2')}
                                 aria-controls="submenu-item2"
                                 aria-expanded={openMenuKey === 'item2'}
-                                className='offcanvas-nav-link border-bottom'
+                                className={`offcanvas-nav-link border-bottom ${openMenuKey === 'item2' ? 'active-link' : ''}`}
                             >
                                 Menu item 2
                             </Nav.Link>

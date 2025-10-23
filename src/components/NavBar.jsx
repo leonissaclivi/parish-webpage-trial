@@ -25,7 +25,7 @@ function NavBar() {
 
 
     return (
-        <Navbar expand='lg' className='py-1' style={{ backgroundColor: "#f5f4f5" }}>
+        <Navbar expand='lg' className='py-1 d-none d-lg-block' style={{ backgroundColor: "#f5f4f5" }}>
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id='basic-navbar-nav'>

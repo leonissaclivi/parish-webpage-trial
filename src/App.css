@@ -44,6 +44,10 @@
     background-color: #ecdc96;
 }
 
+.active-link {
+  color: #000 !important;
+  background-color: #ecdc96 !important;
+}
 
 
 .submenu-nav-link {
