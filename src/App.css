@@ -1,0 +1,33 @@
+
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out, visibility 0.2s ease-in-out; 
+  width: 200px;
+  display: block !important; 
+  visibility: hidden;
+}
+
+.show > .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  border-radius: 0px;
+}
+
+.dropdown-item {
+  font-weight: bold;
+}
+
+
+.offcanvas-nav-link {
+    font-size: 1.1rem !important;
+    color: #333 !important;
+    padding: 1rem 0 !important;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.offcanvas-nav-link:hover {
+    font-size: 1.3rem !important;
+    color: #000 !important;
+}
